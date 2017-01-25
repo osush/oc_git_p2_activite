@@ -5,6 +5,7 @@
         <title>Créer Mdp</title>
     </head>
     <body>
+		<h1>Création d’un utilisateur avec son mot de passe.</h1>
         <form action="index.php" method="post">
             utilisateur <input type="text" name="utilIns" placeholder="Inserer user"><br />
             Inserer mdp <input type="password" name="mdpIns" placeholder="Inserer mdp"><br />
