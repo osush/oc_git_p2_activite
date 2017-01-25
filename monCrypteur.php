@@ -32,24 +32,20 @@ class monCrypteur
     public function verifierMdp($aUtil,$aMdp) 
     {
         $aMdpCrypt = $this->recupMdp($aUtil);
-        //echo '<script>alert("'.strlen($aMdpCrypt).'")</script>';
         if($aMdpCrypt)
         {
             if(crypt($aMdp,$aMdpCrypt) == $aMdpCrypt)
             {
                 echo '<script>alert("Match")</script>';
-                //return true;
             }
             else
             {
                 echo '<script>alert("No Match")</script>';
-                //return false;
             }
         }
         else
         {
             echo '<script>alert("Probleme de récupération")</script>';
-            //return false;
         }
     }
     
@@ -66,7 +62,6 @@ class monCrypteur
                 $monResult = false;
                 while($leTabNav = fgetcsv($id_File,0,";"))
                 {
-                    //echo '<script>alert("'.$leTabNav[0].'")</script>';
                     if($aUtil == $leTabNav[0])
                     {                
                         $monResult = $leTabNav[1];

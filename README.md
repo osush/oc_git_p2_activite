@@ -1,2 +1,2 @@
-# oc_git_p2_activite-
-tp openclassroom pour correction github
+# oc_git_p2_activite
+Le README.md n'est pas le README.txt comme demandé dans l'énoncé de l'exercice.
